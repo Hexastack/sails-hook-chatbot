@@ -52,11 +52,11 @@ See the "[examples](https://github.com/Hexastack/sails-hook-chatbot/tree/master/
 
 ## Coming soon
 Our next priority is to implement a default handler that allows a simple XHR/WebSocket interactions.
-Next may come is a slack handler ...
+Next may come is a adding slack support ...
 
 ## License
 MIT
 
 ## Credits
 [Freeways/messenger-bot-sails](https://github.com/Freeways/messenger-bot-sails) Boiletplate has been a starting point for this project.
-The messenger handler's source code is a modified version [Charca/bootbot](https://github.com/Charca/bootbot) which is a powerful JavaScript Framework to build Facebook Messenger's Chat bots. Special thanks to [Maxi Ferreira](https://github.com/Charca) !
+The messenger handler's source code is a modified version of [Charca/bootbot](https://github.com/Charca/bootbot) which is a powerful JavaScript Framework to build Facebook Messenger's Chat bots. Special thanks to [Maxi Ferreira](https://github.com/Charca) !
