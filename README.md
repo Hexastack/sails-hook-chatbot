@@ -15,17 +15,17 @@ npm install sails-hook-chatbot --save
 ```javascript
 module.exports.chatbot = {
   handler: 'messenger',
-	messenger: {
-     fbApiVersion: "v2.10",
-	   appSecret: "...",
-	   accessToken: "...",
-	   verifyToken: "..."
+  messenger: {
+    fbApiVersion: "v2.10",
+    appSecret: "...",
+    accessToken: "...",
+    verifyToken: "..."
   }
 };
 ```
 You will need to create a facebook developer account and create a new app in order to get the credentials. Please visit the official documentation : https://developers.facebook.com/docs/messenger-platform/getting-started
 
-4. In order to teach your chatbot what to say/do, you will need to create a new hook. For a starting example, you can create a file under `api/hooks/hello/index.js` where you put :
+4. In order to teach your chatbot what to say/do, you will need to create a new hook. As a starting example, you can create a file under `api/hooks/hello/index.js` containing :
 ```javascript
 module.exports = function(sails) {
 
