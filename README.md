@@ -22,9 +22,9 @@ module.exports.chatbot = {
   }
 };
 ```
-Please note that only Faceboko messenger handler is implemented :
-- You will need to create a facebook developer account and create a new app in order to get the credentials. Please visit the official documentation : https://developers.facebook.com/docs/messenger-platform/getting-started.
-- The webhook url you need to provide is `/webhook` (example: https://website.com/webhook).
+Please note that for now only Facebook Messenger handler is available :
+- You will need to signup for a facebook developer account and then create a new app in order to get the API credentials. Please visit the official documentation to get started : https://developers.facebook.com/docs/messenger-platform/getting-started.
+- The webhook url you'll need to provide is `/webhook` (example: https://website.com/webhook).
 
 4. In order to teach your chatbot what to say/do, you will need to create a new hook. As a starting example, you can create a file under `api/hooks/hello/index.js` containing :
 ```javascript
