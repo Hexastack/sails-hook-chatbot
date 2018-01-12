@@ -1,4 +1,4 @@
-# sails-hook-bot
+# sails-hook-chatbot
 Simple module for implementing a chatbot.
 
 ## Installation
