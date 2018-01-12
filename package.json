@@ -1,0 +1,29 @@
+{
+  "name": "sails-hook-chatbot",
+  "version": "1.0.0",
+  "description": "A simple module to add a chatbot feature.",
+  "main": "index.js",
+  "sails": {
+    "isHook": true
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hexastack/sails-hook-chatbot.git"
+  },
+  "keywords": [
+    "sails",
+    "chatbot"
+  ],
+  "author": "Hexastack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hexastack/sails-hook-chatbot/issues"
+  },
+  "homepage": "https://github.com/Hexastack/sails-hook-chatbot#readme"
+}
