@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Hexastack/sails-hook-chatbot#readme",
   "dependencies": {
+    "node-fetch": "^1.7.3",
     "sails-build-dictionary": "^0.10.1"
   }
 }
