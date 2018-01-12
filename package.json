@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Hexastack/sails-hook-chatbot/issues"
   },
-  "homepage": "https://github.com/Hexastack/sails-hook-chatbot#readme"
+  "homepage": "https://github.com/Hexastack/sails-hook-chatbot#readme",
+  "dependencies": {
+    "sails-build-dictionary": "^0.10.1"
+  }
 }
