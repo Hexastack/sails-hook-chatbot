@@ -11,7 +11,7 @@ const normalizeString = require('../../utils/normalize-string');
 const fetch = require('node-fetch');
 
 module.exports = function() {
-  var options = sails.config.bot.messenger || false;
+  var options = sails.config.chatbot.messenger || false;
   if (!options || (options && (!options.accessToken || !options.verifyToken || !options.appSecret))) {
     throw new Error('Messenger bot handler : You need to specify an accessToken, verifyToken and appSecret');
   }

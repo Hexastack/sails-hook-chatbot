@@ -17,7 +17,7 @@ module.exports = function (req, res, next) {
     var elements = signature.split('=');
     var method = elements[0];
     var signatureHash = elements[1];
-    var expectedHash = crypto.createHmac('sha1', sails.config.bot.messenger.appSecret)
+    var expectedHash = crypto.createHmac('sha1', sails.config.chatbot.messenger.appSecret)
       .update(JSON.stringify(req.body))
       .digest('hex');
 
