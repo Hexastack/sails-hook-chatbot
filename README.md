@@ -11,7 +11,7 @@ sails new myChatbot
 cd myChatbot
 npm install sails-hook-chatbot --save
 ```
-3. You will need to add the following `config/chatbot.js` (currenty only messenger is available) :
+3. You will need to add the following `config/chatbot.js` :
 ```javascript
 module.exports.chatbot = {
   handler: 'messenger',
@@ -22,7 +22,9 @@ module.exports.chatbot = {
   }
 };
 ```
-You will need to create a facebook developer account and create a new app in order to get the credentials. Please visit the official documentation : https://developers.facebook.com/docs/messenger-platform/getting-started
+Please note that only Faceboko messenger handler is implemented :
+- You will need to create a facebook developer account and create a new app in order to get the credentials. Please visit the official documentation : https://developers.facebook.com/docs/messenger-platform/getting-started.
+- The webhook url you need to provide is `/webhook` (example: https://website.com/webhook).
 
 4. In order to teach your chatbot what to say/do, you will need to create a new hook. As a starting example, you can create a file under `api/hooks/hello/index.js` containing :
 ```javascript
@@ -46,10 +48,15 @@ module.exports = function(sails) {
   }
 };
 ```
-See the "examples" folder for more.
+See the "[examples](https://github.com/Hexastack/sails-hook-chatbot/tree/master/examples)" folder for more about the usage.
+
+## Coming soon
+Our next priority is to implement a default handler that allows a simple XHR/WebSocket interactions.
+Next may come is a slack handler ...
 
 ## License
 MIT
+
 ## Credits
 [Freeways/messenger-bot-sails](https://github.com/Freeways/messenger-bot-sails) Boiletplate has been a starting point for this project.
 The messenger handler's source code is a modified version [Charca/bootbot](https://github.com/Charca/bootbot) which is a powerful JavaScript Framework to build Facebook Messenger's Chat bots. Special thanks to [Maxi Ferreira](https://github.com/Charca) !
