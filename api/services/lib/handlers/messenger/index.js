@@ -25,8 +25,8 @@ module.exports = function() {
 
   sails.on('hook:chatbot:conversation:end', function(endedConvo) {
     sails.log.debug('Messenger bot handler : The conversation has been ended with ' + endedConvo.userId);
-    const removeIndex = this._conversations.indexOf(endedConvo);
-    this._conversations.splice(removeIndex, 1);    
+    const removeIndex = Chatbot._conversations.indexOf(endedConvo);
+    Chatbot._conversations.splice(removeIndex, 1);    
   });
 
   // Subscribe
