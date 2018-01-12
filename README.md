@@ -16,7 +16,6 @@ npm install sails-hook-chatbot --save
 module.exports.chatbot = {
   handler: 'messenger',
   messenger: {
-    fbApiVersion: "v2.10",
     appSecret: "...",
     accessToken: "...",
     verifyToken: "..."
