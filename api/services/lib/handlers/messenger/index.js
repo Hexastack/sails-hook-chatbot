@@ -155,11 +155,7 @@ module.exports = function() {
     } : event.sender.id;
     const chat = new Chat(this, recipient);
 
-    sails.emit('hook:chatbot:' + type, {
-      event: event,
-      chat: chat,
-      data: data
-    });
+    sails.emit('hook:chatbot:' + type, event, chat, data);
   };
 
   this._handleMessageEvent = function(event) {
