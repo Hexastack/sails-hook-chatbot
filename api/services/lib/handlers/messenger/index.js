@@ -26,7 +26,7 @@ module.exports = function() {
   sails.on('hook:chatbot:conversation:end', function(endedConvo) {
     sails.log.debug('Messenger bot handler : The conversation has been ended with ' + endedConvo.userId);
     const removeIndex = Chatbot._conversations.indexOf(endedConvo);
-    Chatbot._conversations.splice(removeIndex, 1);    
+    Chatbot._conversations.splice(removeIndex, 1);
   });
 
   // Subscribe
@@ -48,6 +48,10 @@ module.exports = function() {
   };
 
   // Define dialog functions
+  this.on = function(event, callback) {
+    sails.on('hook:chatbot:' + event, callback);
+  };
+
   this.hear = function(keywords, callback) {
     var _hearMap = this._hearMap;
     keywords = Array.isArray(keywords) ? keywords : [keywords];
